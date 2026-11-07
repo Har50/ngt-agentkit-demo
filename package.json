@@ -8,7 +8,8 @@
     "seller": "node seller.mjs",
     "agent": "node agent.mjs",
     "check": "node check.mjs",
-    "demo": "node demo.mjs"
+    "demo": "node demo.mjs",
+    "verify": "node verify-tx.mjs"
   },
   "engines": {
     "node": ">=20"

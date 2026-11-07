@@ -30,6 +30,9 @@ With no keys set, the seller checks the signature for real but **simulates settl
    - `FACILITATOR_KEY`: a wallet with a little Base ETH. It submits the settlement and pays the gas.
 2. `npm run check` reads balances on Base and tells you if anything is missing.
 3. `npm run demo` makes one real payment and prints the Basescan link.
+4. `node verify-tx.mjs <tx hash>` reads the transaction straight from Base: status, who paid gas, and the NGT transfer.
+
+A real run settled 0.001 NGT on Base mainnet in [`0x4a578b05…d72a`](https://basescan.org/tx/0x4a578b050467b918d3400c231551cf9e5988fd001d763e1c1edb38710022d72a); the seller paid the gas.
 
 Or run the two sides separately: `npm run seller` in one terminal, `npm run agent` in another.
 
@@ -41,5 +44,6 @@ Or run the two sides separately: `npm run seller` in one terminal, `npm run agen
 | `agent.mjs` | AgentKit `ViemWalletProvider` + `ngtActionProvider`, calls `ngt_pay_and_fetch` |
 | `demo.mjs` | starts the seller, runs the agent once, stops |
 | `check.mjs` | read-only balance check before a live run |
+| `verify-tx.mjs` | read-only check of a transaction on Base |
 
 Keys stay in `.env`, which is git-ignored.
