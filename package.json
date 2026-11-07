@@ -1,0 +1,24 @@
+{
+  "name": "ngt-agentkit-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Coinbase AgentKit agent pays an x402 API on Base with @ngtchain/agentkit. Gasless for the agent.",
+  "type": "module",
+  "scripts": {
+    "seller": "node seller.mjs",
+    "agent": "node agent.mjs",
+    "check": "node check.mjs",
+    "demo": "node demo.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@coinbase/agentkit": "0.10.4",
+    "@ngtchain/agentkit": "^0.1.0",
+    "@ngtchain/paywall": "^0.1.1",
+    "viem": "2.38.3",
+    "zod": "^3.23.8"
+  },
+  "license": "MIT"
+}
