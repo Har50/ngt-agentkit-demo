@@ -34,7 +34,7 @@ With no keys set, the seller checks the signature for real but **simulates settl
 
 A real run settled 0.001 NGT on Base mainnet in [`0x4a578b05…d72a`](https://basescan.org/tx/0x4a578b050467b918d3400c231551cf9e5988fd001d763e1c1edb38710022d72a); the seller paid the gas.
 
-Or run the two sides separately: `npm run seller` in one terminal, `npm run agent` in another.
+Or run the two sides separately: `npm run seller` in one terminal, `npm run agent` in another. The seller prefers port 4021 (or `PORT`). If that port is taken, for example by a seller that is already running, it uses the next free port and prints the `npm run agent -- <url>` command to use instead.
 
 ## Files
 
